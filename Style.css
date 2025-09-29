@@ -1,0 +1,57 @@
+
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+header, footer {
+  padding: 1em;
+  background: #f0f0f0;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1em;
+  justify-content: center;
+}
+.block {
+  padding: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.block:hover {
+  transform: scale(1.05);
+}
+.study { background: #d0f0ff; }
+.gym { background: #ffd0d0; }
+.fun { background: #e0ffe0; }
+
+.dark-mode {
+  background: #222;
+  color: #eee;
+}
+.dark-mode header, .dark-mode footer {
+  background: #333;
+}
+
+#progressBar {
+  width: 80%;
+  height: 10px;
+  background: #ccc;
+  margin: 1em auto;
+  border-radius: 5px;
+}
+#progressFill {
+  height: 100%;
+  width: 0%;
+  background: #4caf50;
+  border-radius: 5px;
+}

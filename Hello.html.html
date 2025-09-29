@@ -1,0 +1,44 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tom's Interactive Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📅 Tom's Weekly Planner</h1>
+    <button id="themeToggle">🌓 Toggle Theme</button>
+    <select id="filterSelect">
+      <option value="all">Show All</option>
+      <option value="study">🧠 Study</option>
+      <option value="gym">🏃‍♂️ Gym</option>
+      <option value="fun">🎭 Extracurricular</option>
+    </select>
+  </header>
+
+  <main id="planner">
+    <div class="block study" draggable="true" data-note="">🧠 Study - Math</div>
+    <div class="block gym" draggable="true" data-note="">🏃‍♂️ Gym - Cardio</div>
+    <div class="block fun" draggable="true" data-note="">🎭 Drama Club</div>
+  </main>
+
+  <section id="charts">
+    <canvas id="focusChart"></canvas>
+  </section>
+
+  <footer>
+    <button id="snapshotBtn">📸 Share My Week</button>
+    <button id="reminderBtn">🔔 Set Reminder</button>
+    <div id="progressBar"><div id="progressFill"></div></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
